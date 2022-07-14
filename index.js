@@ -35,4 +35,7 @@ function confirmEnding(str, target) {
   return str.slice(-target.length) === target;
 }
 
-console.log(confirmEnding("Congratulation", "on"));
+// Repeat a String Repeat a String
+function repeatStringNumTimes(str, num) {
+  return num <= 0 ? "" : (str += repeatStringNumTimes(str, num - 1));
+}
