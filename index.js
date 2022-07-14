@@ -69,3 +69,12 @@ function findElement(arr, func) {
 function booWho(bool) {
   return typeof bool == "boolean";
 }
+
+// Title Case
+function titleCase(str) {
+  return str
+    .toLowerCase()
+    .split(" ")
+    .map((word) => word[0].toUpperCase() + word.slice(1))
+    .join(" ");
+}
