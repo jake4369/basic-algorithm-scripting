@@ -88,3 +88,8 @@ function frankenSplice(arr1, arr2, n) {
   }
   return arr2Copy;
 }
+
+// Falsy Bouncer
+function bouncer(arr) {
+  return arr.filter((val) => Boolean(val));
+}
