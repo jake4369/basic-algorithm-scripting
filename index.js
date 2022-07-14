@@ -20,3 +20,12 @@ function findLongestWordLength(str) {
   });
   return count;
 }
+
+// Return Largest Numbers in Arrays
+function largestOfFour(arr) {
+  let result = [];
+  for (let i = 0; i < arr.length; i++) {
+    result.push(Math.max(...arr[i]));
+  }
+  return result;
+}
