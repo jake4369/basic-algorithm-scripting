@@ -37,5 +37,16 @@ function confirmEnding(str, target) {
 
 // Repeat a String Repeat a String
 function repeatStringNumTimes(str, num) {
-  return num <= 0 ? "" : (str += repeatStringNumTimes(str, num - 1));
+  //   let resultingStr = "";
+  //   for (let i = 0; i < num; i++) {
+  //     resultingStr += str;
+  //   }
+  //   return resultingStr;
+
+  return num > 0 ? (str += repeatStringNumTimes(str, num - 1)) : "";
+}
+
+// Truncate a String
+function truncateString(str, num) {
+  return str.length > num ? `${str.slice(0, num)}...` : str;
 }
