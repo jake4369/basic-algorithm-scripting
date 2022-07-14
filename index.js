@@ -64,3 +64,8 @@ function findElement(arr, func) {
 
   return arr.find(func);
 }
+
+// Boo who
+function booWho(bool) {
+  return typeof bool == "boolean";
+}
