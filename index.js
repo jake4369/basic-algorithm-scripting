@@ -93,3 +93,8 @@ function frankenSplice(arr1, arr2, n) {
 function bouncer(arr) {
   return arr.filter((val) => Boolean(val));
 }
+
+// Where do I Belong
+function getIndexToIns(arr, num) {
+  return [...arr, num].sort((a, b) => a - b).indexOf(num);
+}
