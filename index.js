@@ -98,3 +98,13 @@ function bouncer(arr) {
 function getIndexToIns(arr, num) {
   return [...arr, num].sort((a, b) => a - b).indexOf(num);
 }
+
+// Mutations
+function mutation(arr) {
+  let firstWord = arr[1].toLowerCase();
+  let secondWord = arr[0].toLowerCase();
+  for (let i = 0; i < firstWord.length; i++) {
+    if (secondWord.indexOf(firstWord[i]) < 0) return false;
+  }
+  return true;
+}
